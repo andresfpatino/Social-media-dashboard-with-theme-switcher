@@ -50,4 +50,20 @@ h1, h2, h3, h4, h5, h6 { font-weight: 700; margin: 0px; }
 .head-section__main-title { color: #1e202a; font-size: 2em; }
 
 .head-section__sub-title { font-size: 1.05em; }
+
+.wrap-swicht { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.wrap-swicht__title { color: #63687e; font-weight: 700; margin-right: 15px; }
+
+.switch { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-negative: 0; flex-shrink: 0; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; width: 55px; height: 22px; border-radius: 50em; padding: 3px 0; }
+
+.switch__input { margin: 0; padding: 0; opacity: 0; height: 0; width: 0; pointer-events: none; }
+
+.switch__label { position: absolute; left: 0; top: 0; width: 100%; height: 100%; color: transparent; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-color: #aeb3cb; border-radius: inherit; z-index: 1; -webkit-transition: background 0.2s; transition: background 0.2s; cursor: pointer; }
+
+.switch__marker { position: relative; background-color: #fff; width: calc( 22px - 2px * 2); height: calc( 22px - 2px * 2); border-radius: 50%; z-index: 2; pointer-events: none; left: 5px; -webkit-transition: left 0.2s; transition: left 0.2s; will-change: left; }
+
+.switch__input:checked + .switch__label { background: #3b9ada; background: -webkit-gradient(linear, left top, right top, from(#3b9ada), to(#49be8a)); background: linear-gradient(90deg, #3b9ada 0%, #49be8a 100%); }
+
+.switch__input:checked + .switch__label:checked + .switch__label + .switch__marker { left: calc(100% - 22px + 3px); }
 /*# sourceMappingURL=main.css.map */
